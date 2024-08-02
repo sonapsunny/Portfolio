@@ -1,0 +1,447 @@
+body {
+    margin: 100px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: #FAF2E9;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    width: 100%;
+    max-width: 1800px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #1a1a1a;
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav__content .logo {
+    color: #FAF2E9;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav__content ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__content ul li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav__content ul li:hover {
+    background-color: #2c2c2c;
+}
+
+.nav__content ul li a {
+    color: #FAF2E9;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav__content .checkbox {
+    display: none;
+}
+
+.nav__content input[type="checkbox"] {
+    display: none;
+}
+
+.nav__content .ri-menu-line {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav__content ul {
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #1a1a1a;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+    }
+
+    .nav__content input[type="checkbox"]:checked ~ ul {
+        transform: translateX(0);
+    }
+
+    .nav__content .checkbox {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #FAF2E9;
+    }
+
+    .nav__content .ri-menu-line {
+        display: block;
+    }
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+}
+
+.container .text {
+    max-width: 600px;
+}
+
+.container .text h1 {
+    font-size: 64px;
+    margin: 0;
+    color: #faf2e9;
+}
+
+.container .text h2 {
+    font-size: 48px;
+    margin: 10px 0 0 0;
+    color: #FAF2E9;
+}
+
+.container .text .span_color {
+    color: #959595;
+}
+
+.container .image img {
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+    }
+    .container {
+        margin-top: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .image img {
+        max-width: 100%;
+    }
+
+    .container .text h1 {
+        font-size: 48px;
+    }
+
+    .container .text h2 {
+        font-size: 36px;
+    }
+}
+
+.about-container {
+    padding: 100px 5px;
+    background-color: #1a1a1a;
+    color: #faf2e9;
+}
+
+.about-container .about-text .span_color {
+    color:#959595;
+}
+
+.about-container .about-text h1 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.about-container .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-container .about-text .contact-button {
+    background-color: #faf2e9;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container .about-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-container .about-text h1 {
+        font-size: 36px;
+    }
+}
+
+.skills-container {
+    padding: 20px 5px;
+    background-color: #1a1a1a;
+    color: #faf2e9;
+}
+
+.skills-container .skill-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-container .skill-text .span_color {
+    color: #959595;
+}
+
+.skills-container .skill-text h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.skills-container .skill-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.skills-container .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-container .skills-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.skills-container .skill {
+    margin: 20px 0;
+}
+
+.skills-container .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-container .progress-bar {
+    width: 70%;
+    height: 10px;
+    background-color: #959595;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills-container .progress-bar div {
+    height: 100%;
+    background-color: #faf2e9;
+}
+
+@media (max-width: 768px) {
+    .skills-container .skills-column {
+        max-width: 100%;
+    }
+}
+
+.portfolio-container {
+    padding: 20px 5px;
+    background-color: #1a1a1a;
+    color: #faf2e9;
+}
+
+.portfolio-container .portfolio-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.portfolio-container .portfolio-text .span_color {
+    color: #959595;
+}
+
+.portfolio-container .portfolio-text h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.portfolio-container .portfolio-text .portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.portfolio-container .portfolio-text .portfolio-item img {
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.portfolio-container .portfolio-text .portfolio-description {
+    max-width: 800px;
+    text-align: left;
+}
+
+.portfolio-container .portfolio-text .portfolio-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.portfolio-container .portfolio-text .portfolio-description p .span_color {
+    color: #959595;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container .portfolio-text .portfolio-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-container .portfolio-text .portfolio-item img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-container .portfolio-text .portfolio-description {
+        max-width: 100%;
+    }
+}
+
+.experience-section {
+    padding: 20px 5px;
+    background-color: #1a1a1a;
+    color: #faf2e9;
+}
+
+.experience-section .experience-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experience-section .experience-text .span_color {
+    color: #959595;
+}
+
+.experience-section .experience-text h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* .experience-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    top: 12px;
+} */
+
+.experience-content {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.experience-content h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.experience-content p {
+    margin: 5px 0;
+    color: #959595;
+}
+
+.experience-content .date {
+    float: right;
+    font-style: italic;
+    color: #959595;
+}
+
+.experience-content ul {
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+    color: white;
+}
+
+
+.contact-container {
+    padding: 100px 5px;
+    background-color: #1a1a1a;
+    color: #faf2e9;
+}
+
+.contact-container .contact-text .span_color {
+    color:#959595;
+}
+
+.contact-container .contact-text h1 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.contact-container .contact-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-container .contact-text .contact-button {
+    background-color: #faf2e9;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust as needed */
+    transition: all 2.0s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

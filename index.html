@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Developer Introduction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo">
+        <a href="/" style="text-decoration: none;color: #FAF2E9;">SonaPS</a>
+      </div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#myskills">My Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container hidden">
+    <div class="text">
+      <h1>Hello,</h1>
+      <h2>
+        I’m <span class="span_color">Sona P Sunny</span>,<br />
+        the <span class="span_color">Web Developer</span>
+      </h2>
+    </div>
+    <div class="image">
+      <img src="assets/sona.jpg" alt="Sona P Sunny" />
+    </div>
+  </div>
+  <div class="about-container hidden" id="about">
+    <div class="about-text">
+      <h1><span class="span_color">About Me</span></h1>
+      <p>
+        An aspiring web developer with a passion for creating beautiful,
+        responsive, and user-friendly websites. Seeking to integrate my
+        comprehensive expertise with a vibrant team to drive growth and meet
+        collective goals, while advancing both the company's success and my
+        professional journey.
+      </p>
+      <div>
+        <a href="#contact" class="contact-button" style="font-weight: 600;">CONTACT ME</a>
+        <a href="https://drive.google.com/file/d/1Dl2nYPBmBOuyde6lhUusahtL9O2eSoDh/view?usp=drive_link"
+          class="contact-button" style="font-weight: 600;">View my Resume</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="skills-container hidden" id="myskills">
+    <div class="skill-text">
+      <h2>What I’m Expert In</h2>
+      <h1><span class="span_color">My Skills</span></h1>
+      <p>
+        Below, you will find an overview of my skills and expertise. From web
+        development to design, I bring a diverse set of abilities to every
+        project. Explore my skill set to see how I can help bring your ideas
+        to life.
+      </p>
+      <div class="section skills">
+        <div class="skills-column">
+          <div class="skill">
+            <div class="progress">
+              <span>HTML</span>
+              <div class="progress-bar">
+                <div style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>CSS</span>
+              <div class="progress-bar">
+                <div style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>Bootstrap</span>
+              <div class="progress-bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>Django</span>
+              <div class="progress-bar">
+                <div style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-column">
+
+          <div class="skill">
+            <div class="progress">
+              <span>Figma</span>
+              <div class="progress-bar">
+                <div style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>UI/UX Design</span>
+              <div class="progress-bar">
+                <div style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>Python</span>
+              <div class="progress-bar">
+                <div style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>MongoDB</span>
+              <div class="progress-bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="progress">
+              <span>SQL</span>
+              <div class="progress-bar">
+                <div style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-container hidden" id="projects">
+    <div class="portfolio-text">
+      <h2>Want to know about my works?</h2>
+      <h1><span class="span_color">Portfolio</span></h1>
+      <div class="portfolio-item">
+        <img src="assets/medialso.png" alt="Portfolio 1">
+        <div class="portfolio-description">
+          <p>
+            <span class="span_color" style="font-size: 3rem; font-weight: 800;">*1</span>
+            Developed and maintained dynamic websites and web applications using HTML, CSS, JavaScript.
+          </p>
+          <span><a href="https://github.com/sonapsunny/Medialso---A-dynamic-Website" style="text-decoration: none; color: #959595;">See more...</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/bso.png" alt="Portfolio 2">
+        <div class="portfolio-description">
+          <p>
+            <span class="span_color" style="font-size: 3rem; font-weight: 800;">*2</span>
+            I undertook the redesign of BSO Real Estates's website to enhance user experience, modernize the interface,
+            and improve overall functionality. Using Figma, I crafted a visually appealing and user-centric design that
+            aligns with the brand's identity and business goals.
+          </p>
+          <span><a
+              href="https://www.figma.com/design/1NFkaoVsjfD9O8Kn0BDUya/BSO_Service-_Page-Redesign?t=ANhyMgiU9tJrKcB1-1"
+              style="text-decoration: none; color: #959595;">See more...</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/rotating_slider.png" alt="Portfolio 3">
+        <div class="portfolio-description">
+          <p>
+            <span class="span_color" style="font-size: 3rem; font-weight: 800;">*3</span>
+            This project features a rotating slider designed in Figma, showcasing my ability to create engaging and
+            dynamic user interface components. The rotating slider is a versatile UI element ideal for highlighting
+            featured content, products, or images in a visually appealing manner.
+          </p>
+          <span><a
+              href="https://www.figma.com/design/3ywgMH4bKBczQBU5DO0rJi/rotating-slider?node-id=6-747&t=ANhyMgiU9tJrKcB1-1"
+              style="text-decoration: none; color: #959595;">See more...</a></span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/starbucks.png" alt="Portfolio 4">
+        <div class="portfolio-description">
+          <p>
+            <span class="span_color" style="font-size: 3rem; font-weight: 800;">*4</span>
+            This project involves a comprehensive redesign of the Starbucks website, created using Figma. The redesign
+            focuses on enhancing the user experience, modernizing the visual design, and improving the overall
+            functionality of the site. This project demonstrates my capability in crafting intuitive, aesthetically
+            pleasing, and user-friendly interfaces.
+          </p>
+          <span><a href="https://www.figma.com/design/DkNO4We1azqUdlDgYDfE16/starbucks?t=ANhyMgiU9tJrKcB1-1"
+              style="text-decoration: none; color: #959595;">See more...</a></span>
+        </div>
+      </div>
+      <span><a href="https://github.com/sonapsunny" style="text-decoration: none; color: #959595;">See more projects >></a></span>
+    </div>
+  </div>
+  <!-- <div class="experience-container">
+      <div class="experience-text">
+        <h2>My Resume</h2>
+        <h1><span class="span_color">Experience</span></h1>
+          <p>
+              An aspiring web developer with a passion for creating beautiful,
+              responsive, and user-friendly websites. Seeking to integrate my
+              comprehensive expertise with a vibrant team to drive growth and meet
+              collective goals, while advancing both the company's success and my
+              professional journey.
+          </p>
+      </div> 
+    </div>-->
+  <div class="experience-section hidden" id="experience">
+    <div class="experience-text">
+      <h2>My Resume</h2>
+      <h1><span class="span_color">Experience</span></h1>
+    </div>
+    <div class="experience-item">
+      <div class="experience-dot"></div>
+      <div class="experience-content">
+        <h3>Web Developer</h3>
+        <p>DRT Seagull LLC, Dubai <span class="date">Mar 2024 - Jul 2024</span></p>
+        <ul>
+          <li>Assisted in the development and maintenance of dynamic websites and web applications using HTML, CSS,
+            JavaScript, and Node JS</li>
+          <li>Collaborated with cross-functional teams to design and implement responsive and user-friendly web
+            interfaces.</li>
+          <li>Contributed to the optimization of web pages for maximum speed and scalability.</li>
+          <li>Stayed updated with emerging web development trends and technologies to implement best practices.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience-item">
+      <div class="experience-dot"></div>
+      <div class="experience-content">
+        <h3>Software Developer Intern</h3>
+        <p>Camerinfolks Pvt. Ltd, Kerala <span class="date">Jul 2023 - Nov 2023</span></p>
+        <ul>
+          <li>Contributed to software design and development.</li>
+          <li>Gained knowledge in Software Engineering and Full Stack Development.</li>
+          <li>Designed and developed assigned projects.</li>
+          <li>Developed a web application with a back-end using Python, Django, JavaScript, and SQL databases, and a
+            front-end using HTML, CSS, and Bootstrap.</li>
+          <li>Tools & Technologies used: HTML, Cascading Style Sheet (CSS), Bootstrap, Tkinter, JavaScript, SQL, Python
+            (Programming Language)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="contact-container hidden" id="contact">
+    <div class="contact-text">
+      <h1><span class="span_color">Get in Touch <br>with Me</span></h1>
+      <p>
+        Have a project in mind? Want to chat about your next big idea? Let's connect!
+      </p>
+      <div style=" display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <div>
+            <a class="contact-button" style="font-weight: 600; margin-right: 5px;"><i class='bx bxs-phone'
+                style="margin-right: 5px;font-size: x-large; "></i>+971 56 936 7312</a>
+            <a class="contact-button" style="font-weight: 600;"><i class='bx bxl-gmail'
+                style="margin-right: 5px;font-size: x-large;"></i>sonapsunny2001@gmail.com</a>
+          </div>
+          <div>
+            <a class="contact-button" style="font-weight: 600; margin-top: 10px;"><i class='bx bxs-map'
+                style="margin-right: 5px;font-size: x-large;"></i>Al Rigga, Grand Deira <br>Dubai, UAE</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="span_color">Follow Me</h2>
+          <div>
+            <a href="https://www.linkedin.com/in/sonaps2321/" class="contact-button" style="font-weight: 600;"><i class='bx bxl-linkedin' style="font-size: x-large;" ></i></a>
+            <a href="https://github.com/sonapsunny" class="contact-button" style="font-weight: 600;"><i class='bx bxl-github' style="font-size: x-large;" ></i></a>
+            <a href="https://www.instagram.com/ft.sonaah/" class="contact-button" style="font-weight: 600;"><i class='bx bxl-instagram-alt' style="font-size: x-large;" ></i></a>
+            <a href="https://www.behance.net/sonaps" class="contact-button" style="font-weight: 600;"><i class='bx bxl-behance' style="font-size: x-large;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="padding: 20px;">
+    <p class="copyright display-4" style="font-size: small; margin-top: 30px;">
+      © 2024 Sona P Sunny. All rights reserved.
+    </p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
